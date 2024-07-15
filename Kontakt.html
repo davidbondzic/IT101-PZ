@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TechnoDB</title>
+        <link rel="stylesheet" href="css.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="Pocetna strana.html"><img src="slike/logo.png" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="Pocetna strana.html">Početna strana</a></li>
+                            <li><a href="Proizvodi.html">Proizvodi</a></li>
+                            <li><a href="O kompaniji.html">O kompaniji</a></li>
+                            <li><a href="O nama.html">O nama</a></li>
+                            <li><a href="Karijere.html">Karijere</a></li>
+                            <li><a href="Kontakt.html">Kontakt</a></li>
+                            <li><a href="Demo.html">Demo</a></li>
+                            <hr>
+                        </ul>
+                    </nav>
+                </div>
+                <form name="forma" onsubmit="return validacija()" method="post" ENCTYPE="multipart/form-data">
+                    <input type="text" name="ime" size="20" maxlength="15" placeholder="Vaše ime"><br>
+                    <input type="text" name="prezime" size="20" maxlength="20" placeholder="Vaše prezime"><br>
+                    <input type="text" name="broj" size="20" maxlength="20" placeholder="Vaš broj telefona"><br>
+                    <input type="text" name="naslov" size="20" maxlength="20" placeholder="Naslov poruke"><br>
+                    <textarea name="poruka" rows="8" cols="120" placeholder="Vaša poruka"></textarea>
+                    <SELECT class="selektovanje" NAME="Vrsta poruke">
+                        <option value="pitanje">Pitanje
+                        <option value="predlog">Predlog
+                            <option value="zalba">Žalba
+                        </SELECT><br>
+                        <input type=file name="file"><br>
+                <button type="submit">Pošalji</button>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.7840138230983!2d20.45439011515025!3d44.830364255688295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6530da697d59%3A0xd2bdfbf9d4b80259!2sUniverzitet%20Metropolitan!5e0!3m2!1ssr!2srs!4v1643643762331!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p>info@metropolitan.ac.rs<br> +381 (11) 20 30 885</p>
+            </form>
+            <footer>
+                <div class="footer-content">
+                    <h3>David Bondžić 4887 - Softversko inženjerstvo</h3>
+                    <img src="slike/logo.png" width="125px">
+                </div>
+                <div class="footer-bottom">
+                    <p>Student prve godine softverskog inženjerstva na Univerzitetu Metropolitan u Beogradu.</p>
+                    <p>david.bondzic.4887@metropolitan.edu.rs</p>
+                </div>
+            </footer>
+    </body>
+</html>
